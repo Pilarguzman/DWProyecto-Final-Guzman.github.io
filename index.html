@@ -1,0 +1,210 @@
+<!DOCTYPE html><!-- tipo de documento -->
+<html lang="en"><!-- etiqueta inicial / idioma -->
+<!--------------------------------------------------------------->
+<!-- Cabecera. recursos y datos importantes sobre nuestra web -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maotaller</title>
+    <link rel="shortcut icon" href="./images/logo-maotaller.png" type="image/x-icon">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- css externo -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,600;1,200;1,300;1,600;1,700;1,800&family=Poppins:ital,wght@0,300;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body> <!-- cuerpo de la web -->
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-toggleable-sm sticky-top">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <a class="navbar-brand" href="./index.html">
+                <img src="/images/logo-maotaller2.png" alt="Logo" width="100" height="100" class="align-top p-2 g-col-6">
+              </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active text-success" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-success" href="./pages/ofertas.html">Ofertas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-success" href="./pages/talleres.html">Talleres</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-success" href="./pages/nosotras.html">Nosotras</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-success" href="./pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+
+        </nav>
+   </header>
+
+   <!-- Inicio Carousel -->
+   <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/Slide1.png" class="d-block w-100" alt="Slide1">
+      </div>
+      <div class="carousel-item">
+        <img src="/images/Slide2.png" class="d-block w-100" alt="Slide2">
+      </div>
+      <div class="carousel-item">
+        <img src="/images/Slide3.png" class="d-block w-100" alt="Slide3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+    <!-- Fin Carousel -->
+
+   <!-- Colecciones -->
+    <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-6 fw-normal text-success" >Colecciones</h1>
+    </div>
+    
+    <div class="c-container">
+
+    <div class="container marketing align-items-center">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="rounded-circle" width="200" height="200" src="./images/fondo-cocina1.png" alt="fotococina">
+                <h2 class="fw-normal text-success py-3">Cocina</h2>
+                <p></p>
+                <p><a class="btn btn-light text-success" href="/pages/mantencion.html" style="background-color: rgba(0, 0, 0, 0.1)">Ver más »</a></p>
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-lg-4">
+                <img class="rounded-circle" width="200" height="200" src="./images/fondo-decohogar.png" alt="fotococina">
+                <h2 class="fw-normal text-success py-3">Decohogar</h2>
+                <p></p>
+                <p><a class="btn btn-light text-success" href="/pages/mantencion.html" style="background-color: rgba(0, 0, 0, 0.1)">Ver más »</a></p>
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-lg-4">
+                <img class="rounded-circle" width="200" height="200" src="./images/fondo-mascotas.png" alt="fotococina">
+                <h2 class="fw-normal text-success py-3">Mascotas</h2>
+                <p></p>
+                <p><a class="btn btn-light text-success" href="/pages/mantencion.html" style="background-color: rgba(0, 0, 0, 0.1)">Ver más »</a></p>
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    </div>
+    
+</div>
+
+    <!-- productos destacados -->
+
+    <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-6 fw-normal text-success" >Productos destacados</h1>
+    </div>
+
+    <div class="container2">
+        <div class="caja caja1"> <img src="./images/sethueveraysalero1.png"alt=""><h2 class="text-success py-3">Set de salero y porta huevos</h2>
+            <p>Precio: $36.700</p> </div>
+        <div class="caja caja2"> <img src="./images/tablaymortero1.png"alt=""><h2 class="text-success py-3">Set tabla picar y mortero</h2>
+            <p>Precio: $24.400</p> </div>
+        <div class="caja caja3"> <img src="./images/bandejayposillo1.png"alt=""><h2 class="text-success py-3">Set bandeja y posillo</h2>
+            <p>Precio: $30.400</p> </div>
+        <div class="caja caja4"> <img src="./images/florero1.png"alt=""><h2 class="text-success py-3">Florero Amazonia</h2>
+            <p>Precio: $24.000</p> </div>
+    </div>
+ 
+
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+<br>
+<br>
+<br>
+
+     <!-- inicio footer -->
+
+     <footer class="bd-footer py-5 mt-5 bg-light">
+   
+        <div class="container">
+    
+          <div class="row my-4">
+    
+            <!--Columna 1-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+    
+              <figure class="d-flex align-items-center justify-content-center mb-4 mx-auto">
+                <a href="/index.html"> 
+                    <img src="/images/logo-maotaller2.png" alt="logo-maotaller" width="105" height="100" class="d-block me-2" viewBox="0 0 118 94" role="img"></a>
+              </figure> 
+    
+              <p class="text-success text-center"></p>
+            </div>
+    
+            <!--Columna 2-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-success mb-4">Acerca de MAO</h5>
+    
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a class="text-success text-decoration-none" href="/index.html">Home</a>
+                </li>
+                <li class="mb-2">
+                  <a class="text-success text-decoration-none" href="https://www.t13.cl/noticia/emprendedores/mao-taller-hermanas-buscan-enamorar-sus-creaciones-decorativas-y-utilitarias">Blog</a>
+                </li>
+                <li class="mb-2">
+                  <a class="text-success text-decoration-none" href="/pages/talleres.html">Talleres</a>
+                </li>
+                <li class="mb-2">
+                  <a class="text-success text-decoration-none" href="/pages/nosotras.html">Sobre nosotras</a>
+                </li>
+              </ul>
+            </div>
+    
+            <!--Columna 3-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-success mb-4">Contacto</h5>
+    
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a class="text-success text-decoration-none" href="https://www.instagram.com/maotaller/">Instagram</a>
+                </li>
+                <li class="mb-2">
+                  <a class="text-success text-decoration-none" href="./contacto.html">contactomaotaller@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <!-- Copyright -->
+        <div class="text-center py-3 mt-5 text-success" style="background-color: rgba(0, 0, 0, 0.1)">
+          © 2023 Copyright
+          <a class="text-success text-decoration-none" href="/index.html">- Todos los derechos reservados MAOtaller</a>
+        </div>
+    
+      </footer>
+    
+       <!-- fin footer-->
+
+
+</html><!-- fin de la web -->
+
