@@ -8,6 +8,9 @@ body {
 
 /* header */
    
+.header .nav .button .m {
+    margin-left: 100px;
+}
 
 /* inicio colecciones */
 
