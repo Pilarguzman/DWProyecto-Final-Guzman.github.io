@@ -5,6 +5,7 @@ body {
   color: rgb(241, 249, 241);
 }
 
+/* Inicio colecciones */
 .c-container {
   text-align: center;
 }
@@ -18,6 +19,7 @@ body {
   color: #99D4B1;
 }
 
+/* Productos destacados */
 .container2 {
   width: 100%;
   display: flex;
@@ -68,6 +70,7 @@ body {
   color: #BEC0BE;
 }
 
+/* Contacto */
 .form {
   background-color: #F2F9F2;
   width: 90%;
@@ -80,14 +83,23 @@ body {
   font-family: "Karla", sans-serif;
   font-size: 20px;
 }
-.formContainer {
+
+.form_container {
   width: 100%;
   display: grid;
   gap: 16px;
   grid-auto-columns: 100%;
 }
-.formContainerTitulo {
+
+.form_titulo {
   font-family: "Karla", sans-serif;
   text-align: center;
   font-size: 30px;
+}
+
+.custom-animation {
+  transition: transform 0.3s ease-out;
+}
+.custom-animation:hover {
+  transform: scale(1.05);
 }/*# sourceMappingURL=main.css.map */

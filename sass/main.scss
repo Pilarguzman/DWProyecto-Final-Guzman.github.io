@@ -14,6 +14,8 @@ body {
     color: $body-color;
   }
   
+/* Inicio colecciones */
+
   .c-container {
     text-align: center;
   }
@@ -27,7 +29,10 @@ body {
       color: $color-verde;
     }
   }
+
   
+/* Productos destacados */
+
   .container2 {
     width: 100%;
     display: flex;
@@ -81,31 +86,43 @@ body {
       color: #BEC0BE;
     }
   }
-  
+ 
+
+  /* Contacto */
+
   .form {
-    background-color: $color-fondo;
+    background-color: #F2F9F2;
     width: 90%;
     margin: auto;
     max-width: 400px;
     border-radius: 16px;
     padding: 56px 24px;
-    
-    div h2 {
-      font-family: 'Karla', sans-serif;
-      font-size: 20px;
+
+    div {
+        h2 {
+            font-family: 'Karla', sans-serif;
+            font-size: 20px;
+        }
     }
-    
-    &Container {
-      width: 100%;
-      display: grid;
-      gap: 16px;
-      grid-auto-columns: 100%;
-      
-      &Titulo {
-        font-family: 'Karla', sans-serif;
-        text-align: center;
-        font-size: 30px;
-      }
-    }
-  }
+}
+
+.form_container {
+    width: 100%;
+    display: grid;
+    gap: 16px;
+    grid-auto-columns: 100%;
+}
+
+.form_titulo {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.custom-animation {
+    transition: transform 0.3s ease-out;
   
+    &:hover {
+        transform: scale(1.05);
+      }
+}
