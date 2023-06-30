@@ -5,6 +5,17 @@ body {
   color: rgb(241, 249, 241);
 }
 
+/* Header */
+
+.card {
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+
 /* Inicio colecciones */
 .c-container {
   text-align: center;
@@ -41,8 +52,10 @@ body {
 }
 
 .caja {
-  margin: 15px;
+  margin: 10px;
+  padding: 15px 30px;
 }
+
 .caja img {
   width: 220px;
   height: 220px;
@@ -70,6 +83,14 @@ body {
   color: #BEC0BE;
 }
 
+.caja a.btn {
+  cursor: pointer;
+}
+
+.caja:hover {
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
 /* Contacto */
 .form {
   background-color: #F2F9F2;
@@ -95,6 +116,12 @@ body {
   font-family: "Karla", sans-serif;
   text-align: center;
   font-size: 30px;
+}
+
+.line {
+  width: 50%;
+  margin: 0 auto;
+  border-top: 1px solid #BEC0BE;
 }
 
 .custom-animation {

@@ -18,14 +18,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,600;1,200;1,300;1,600;1,700;1,800&family=Poppins:ital,wght@0,300;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- css externo -->
-    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="js/index.js"></script>
 </head>
 <body> <!-- cuerpo de la web -->
     
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-toggleable-sm sticky-top">
             <button class="navbar-toggler navbar-toggler-right ms-4" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+             data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
             <a class="navbar-brand" href="./index.html">
@@ -37,9 +39,6 @@
                   <a class="nav-link active text-success" aria-current="page" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-success" href="./pages/ofertas.html">Ofertas</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link text-success" href="./pages/talleres.html">Talleres</a>
                 </li>
                 <li class="nav-item">
@@ -49,13 +48,19 @@
                   <a class="nav-link text-success" href="./pages/contacto.html">Contacto</a>
                 </li>
               </ul>
+                  
             </div>
 
+            <!-- Carro -->
+            <div class="nav-item">
+              <a class="m-5 nav-link text-success" href="#carrito">Carro<sup id="" style="color: #6D6875; font-size: 14px;"></sup></a>
+            </div>
         </nav>
+        
    </header>
 
    <!-- Inicio Carousel -->
-   <div id="carouselExampleIndicators" class="carousel slide">
+    <div id="carouselExampleIndicators" class="carousel slide">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -81,16 +86,17 @@
       <span class="visually-hidden">Siguiente</span>
     </button>
     </div>
+
     <!-- Fin Carousel -->
 
-   <!-- Colecciones -->
-    <div class="px-4 py-5 my-5 text-center mb-2">
+    <!-- Colecciones -->
+      <!-- <div class="px-4 py-5 my-5 text-center mb-2">
         <h1 class="display-6 fw-normal text-success">Colecciones</h1>
-    </div>
+      </div>
     
-    <div class="c-container">
+      <div class="c-container">
 
-    <div class="container marketing align-items-center">
+      <div class="container marketing align-items-center">
         
         <div class="row">
             <div class="col-lg-4">
@@ -98,47 +104,108 @@
                 <h2 class="fw-normal text-success py-3">Cocina</h2>
                 <p></p>
                 <p><a class="btn btn-light text-success" href="./pages/mantencion.html" style="background-color: rgba(0, 0, 0, 0.1)">Ver más »</a></p>
-            </div><!-- /.col-lg-4 -->
+            </div>
 
             <div class="col-lg-4">
                 <img class="rounded-circle" width="200" height="200" src="./images/fondo-decohogar.png" alt="fotococina">
                 <h2 class="fw-normal text-success py-3">Decohogar</h2>
                 <p></p>
                 <p><a class="btn btn-light text-success" href="./pages/mantencion.html" style="background-color: rgba(0, 0, 0, 0.1)">Ver más »</a></p>
-            </div><!-- /.col-lg-4 -->
+            </div>
 
             <div class="col-lg-4">
                 <img class="rounded-circle" width="200" height="200" src="./images/fondo-mascotas.png" alt="fotococina">
                 <h2 class="fw-normal text-success py-3">Mascotas</h2>
                 <p></p>
                 <p><a class="btn btn-light text-success" href="./pages/mantencion.html" style="background-color: rgba(0, 0, 0, 0.1)">Ver más »</a></p>
-            </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-    </div>
+            </div>
+        </div>
+      </div>
     
-</div>
+      </div>
 
-    <!-- productos destacados -->
+      <div class="line px-4 py-7 my-5"></div> -->
 
-    <div class="px-4 py-5 my-5 text-center mb-2">
-        <h2 class="display-6 fw-normal text-success" >Productos destacados</h2>
-    </div>
+    <!-- ---------------------------- -->
 
-    <div class="container2">
-        <div class="caja caja1"> <img src="./images/sethueveraysalero1.png"alt=""><h2 class="text-success py-3">Set de salero y porta huevos</h2>
-            <p>Precio: $36.700</p> <a href="./pages/mantencion.html" class="btn btn-secondary">Comprar</a>
+    <!-- inicio carrito -->
+
+       <div class="container px-4 py-6 my-0 text-center mb-2" id="carrito">
+         <h1 class="display-6 fw-normal text-success py-5">Carrito</h1>
+         <!-- <div class="row" id="items"></div> -->
+       </div>
+
+        <div class="container">
+         <table class="table">
+           <thead>
+             <tr>
+               <th class="text-success" scope="col">#</th>
+               <th class="text-success" scope="col">Item</th>
+               <th class="text-success" scope="col">Cantidad</th>
+               <th class="text-success" scope="col">Agregar</th>
+               <th class="text-success" scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+              <tr class="text-success" id="footer">
+                <th class="text-success" scope="row" colspan="5">Carrito vacío</th>
+              </tr>
+            </tfoot>
+          </table>
+          
+        
+          <div class="row" id="cards"></div>
+        </div>
+
+        <template id="template-footer">
+
+          <th class="text-success" scope="row" colspan="2">Total productos</th>
+          <td>10</td>
+          <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">Vaciar Carrito</button>
+            <button class="btn btn-secondary btn-sm" id="comprar-carrito">Comprar</button>
+          </td>
+          <td class="font-weight-bold text-success">$ <span>5000</span></td>
+
+        </template>
+            
+        <template id="template-carrito">
+
+        <tr>
+          <th class="text-success" scope="row">id</th>
+          <td class="text-success">nombre</td>
+          <td class="text-success">1</td>
+          <td>
+             <button class="btn btn-success btn-sm"> + </button>
+             <button class="btn btn-danger btn-sm"> - </button>
+          </td>
+          <td class="text-success">$<span class="text-success">500</span></td>
+        </tr>
+
+        </template>
+
+        <template id="template-card">
+        <div class="col-8 mb-2 col-md-4"> 
+          <div class="card h-100">
+            <img src="" alt="" class="card-img-top"> 
+            <div class="card-body">
+              <h6 class="text-success py-2">Titulo</h5>
+              <del class="text-secondary">Precio antes</del>
+              <p class="h6 text-success">Precio</p>
+              <button class="btn btn-secondary">Añadir al carrito</button>
+            </div>
           </div>
-        <div class="caja caja2"> <img src="./images/tablaymortero1.png"alt=""><h2 class="text-success py-3">Set tabla picar y mortero</h2>
-            <p>Precio: $24.400</p> <a href="./pages/mantencion.html" class="btn btn-secondary">Comprar</a>
-          </div>
-        <div class="caja caja3"> <img src="./images/bandejayposillo1.png"alt=""><h2 class="text-success py-3">Set bandeja y posillo</h2>
-            <p>Precio: $30.400</p> <a href="./pages/mantencion.html" class="btn btn-secondary">Comprar</a>
-          </div>
-        <div class="caja caja4"> <img src="./images/florero1.png"alt=""><h2 class="text-success py-3">Florero Amazonia</h2>
-            <p>Precio: $24.000</p> <a href="./pages/mantencion.html" class="btn btn-secondary">Comprar</a>
-          </div>
-    </div>
-      
+        </div> 
+        </template>
+
+      <!-- ---------------------------- -->
+
+      <!-- linea -->
+      <div class="line px-4 py-7 my-5"></div>
+
+      <!-- ---------------------------- -->
+
       <!-- inicio footer -->
 
      <footer class="bd-footer py-5 mt-5 bg-light">
@@ -187,7 +254,7 @@
                 <a class="text-success text-decoration-none" href="https://www.instagram.com/maotaller/">Instagram</a>
               </li>
               <li class="mb-2">
-                <a class="text-success text-decoration-none" href="../pages/contacto.html">contactomaotaller@gmail.com</a>
+                <a class="text-success text-decoration-none" href="./pages/contacto.html">contactomaotaller@gmail.com</a>
               </li>
             </ul>
           </div>

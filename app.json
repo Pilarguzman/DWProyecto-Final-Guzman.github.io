@@ -1,0 +1,93 @@
+[
+  {
+    "precio": 12700,
+    "del": 13800,
+    "id": 1,
+    "nombre": "Set Aceitero y Vinagrero",
+    "imagen": "images/aceitero1.png"
+  },
+  {
+    "precio": 6400,
+    "del": 12000,
+    "id": 2,
+    "nombre": "Set Cenicero",
+    "imagen": "images/ceniceros.png"
+  },
+  {
+    "precio": 4200,
+    "del": 8000,
+    "id": 3,
+    "nombre": "Cuadro Amor",
+    "imagen": "images/cuadro1.png"
+  },
+  {
+    "precio": 7400,
+    "del": 9000,
+    "id": 4,
+    "nombre": "Macetero Leopardo",
+    "imagen": "images/macetero1.png"
+  },
+  {
+    "precio": 12600,
+    "del": 14000,
+    "id": 5,
+    "nombre": "Set Maceteros",
+    "imagen": "images/macetero2.png"
+  },
+  {
+    "precio": 2300,
+    "del": 3900,
+    "id": 6,
+    "nombre": "Plato Flores",
+    "imagen": "images/platos.png"
+  },
+  {
+    "precio": 26800,
+    "del": 32000,
+    "id": 7,
+    "nombre": "Set Completo Aliso",
+    "imagen": "images/setcompleto.png"
+  },
+  {
+    "precio": 1200,
+    "del": 2400,
+    "id": 8,
+    "nombre": "Taza Leopardo",
+    "imagen": "images/taza-leopardo.png"
+  },
+  {
+    "precio": 3200,
+    "del": 5400,
+    "id": 9,
+    "nombre": "Vela Vainilla",
+    "imagen": "images/vela-vainilla.png"
+  },
+  {
+    "precio": 36700,
+    "del": 40400,
+    "id": 10,
+    "nombre": "Set de salero y porta huevos",
+    "imagen": "images/sethueveraysalero1.png"
+  },
+  {
+    "precio": 24400,
+    "del": 28600,
+    "id": 11,
+    "nombre": "Set tabla picar y mortero",
+    "imagen": "images/tablaymortero1.png"
+  },
+  {
+    "precio": 30400,
+    "del": 33600,
+    "id": 12,
+    "nombre": "Set bandeja y posillo",
+    "imagen": "images/bandejayposillo1.png"
+  },
+  {
+    "precio": 24400,
+    "del": 26600,
+    "id": 13,
+    "nombre": "Florero Amazonia",
+    "imagen": "images/florero1.png"
+  }
+]
